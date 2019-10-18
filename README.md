@@ -8,7 +8,7 @@ A simple module for py3status that displays the currently clocked in task from o
 - emacs
 - org-mode
 
-_An instance of emacs must be open with the emacs server runnning_. (The emacs server can be started using `M-x server-start`).  
+_An instance of emacs must be open with the emacs server running_. (The emacs server can be started using `M-x server-start`).  
 
 ### Example
 
