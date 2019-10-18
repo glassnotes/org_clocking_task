@@ -22,7 +22,7 @@ org_clocking_task {
 ```
 
 @author Olivia Di Matteo https://github.com/glassnotes
-@license MIT 
+@license BSD-3 Clause
 """
 
 class Py3status:
