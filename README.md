@@ -1,7 +1,5 @@
 # org_clocking_task
 
-# org_clocking_task
-
 A simple module for py3status that displays the currently clocked in task from org-mode.
 
 ### Requirements
