@@ -30,3 +30,7 @@ org_clocking_task {
 }
 ```
 When no task is being clocked, the display will be "Current task: None".
+
+### Click events
+
+You can right click on the status bar to pause the current clock - org-mode will clock you out of the task, and the status bar will display 'PAUSED'. You can then left click on the status bar to re-clock the most recently clocking task. 
