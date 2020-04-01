@@ -50,8 +50,11 @@ class Py3status:
         if are_we_clocking == "t":
             raw_output = self.py3.command_output(["emacsclient", "--eval", "(org-clock-get-clock-string)"]).strip()
             clock_string = raw_output.split('\"')[1].strip()
-            time, task = clock_string.split("] ")
-            return task[1:-1] + " " + time +"]"
+            # Find the first parenthesis, this is where the split between time and task occurs
+            paren_idx = clock_string.find("(")
+            time_string = clock_string[:paren_idx].strip()
+            task_string = clock_string[paren_idx+1:-1]
+            return task_string + " " + time_string 
         else:   
             if self.is_paused:
                 return "PAUSED"
